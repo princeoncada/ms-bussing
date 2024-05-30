@@ -9,11 +9,29 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/hero.jpg')",
+        "about": "url('/images/about.jpg')",
+        "bus1": "url('/images/bus1.jpg')",
+        "bus2": "url('/images/bus2.jpg')",
+        "bus3": "url('/images/bus3.jpg')",
+        "bus4": "url('/images/bus4.jpg')",
+        "bus5": "url('/images/bus5.jpg')",
+        "bus6": "url('/images/bus6.jpg')",
       },
-    },
+      backgroundSize: {
+        "size-sm": "150%",
+        "size-md": "125%",
+        "size-lg": "120%",
+      },
+      backgroundPosition: {
+        "pos-sm": "25% 95%",
+        "pos-md": "18% 70%",
+        "pos-lg": "100% 57%",
+      },
+      transitionProperty: {
+        "width": "width",
+      }
+    }
   },
   plugins: [],
 };
