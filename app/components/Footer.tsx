@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
 	return (
@@ -8,11 +9,7 @@ export default function Footer() {
 					<div className="flex flex-col items-start mb-6 md:mb-0">
 						<div className="mb-4">
 							{/* Replace with your logo image */}
-							<img
-								src="/images/logo.png"
-								alt="Logo"
-								className="h-12"
-							/>
+                            <Image src={`/images/logo.png`} alt="Logo" width={100} height={100}/>
 						</div>
 						<div className="text-sm">
 							<p>123 Main St, City, State</p>

@@ -20,13 +20,7 @@ export default function Fleet() {
 
 	return (
 		<section className="text-center rounded bg-white pt-12 p-3 pb-6 md:px-10 lg:px-32">
-			<h1 className="font-bold text-3xl mb-4">Our Fleet</h1>
-			<p className="text-lg mb-12 md:px-32">
-				Our fleet consists of modern, well-maintained buses equipped
-				with the latest safety features. Each bus undergoes regular
-				maintenance to ensure safety and reliability. We also have buses
-				with varying capacities to accommodate different needs.
-			</p>
+			<h1 className="font-bold text-3xl mb-8">Our Fleet</h1>
 			{pages.map((page, index) => (
 				<div key={page.join("")} className={`${ currentPage === index + 1 ? "grid" : "hidden" } grid-cols-2 grid-rows-1 gap-3 mb-4`}>
 					{page.map((bus) => (

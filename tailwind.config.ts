@@ -22,11 +22,16 @@ const config: Config = {
         "size-sm": "150%",
         "size-md": "125%",
         "size-lg": "120%",
+        "size-about-md": "267%",
+        "size-about-lg": "100%",
       },
       backgroundPosition: {
         "pos-sm": "25% 95%",
         "pos-md": "18% 70%",
         "pos-lg": "100% 57%",
+        "pos-about-sm": "25% 65%",
+        "pos-about-md": "22% 65%",
+        "pos-about-lg": "0% 60%",
       },
       transitionProperty: {
         "width": "width",
