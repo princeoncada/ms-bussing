@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "./Logo"
 import { useState } from "react";
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
 		<>
 			<nav className="flex flex-row justify-between bg-white p-4 sticky top-0 w-full z-10 xl:mx-3 xl:w-auto">
 				<div>
-					<h1 className="font-bold md:text-xl lg:text-2xl">Logo</h1>
+					<div className="h-[64px]"><Logo></Logo></div>
 				</div>
 				<button className="flex flex-col gap-1 justify-center items-end lg:hidden" onClick={toggleMenu}>
 					<div className={`w-7 h-1 bg-black transition ease-in-out duration-500 rounded-sm ${ isOpen ? "-rotate-45 translate-y-2" : "" }`}/>
