@@ -8,7 +8,7 @@ export default function Footer() {
 				<div className="container mx-auto flex flex-col md:flex-row justify-evenly">
 					<div className="flex flex-col items-start mb-6 md:mb-0">
 						<div className="mb-4">
-							{/* Replace with your logo image */}
+							{/* Replace with your logo images */}
                             <Image src={`/images/logo.png`} alt="Logo" width={100} height={100}/>
 						</div>
 						<div className="text-sm">
