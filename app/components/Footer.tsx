@@ -12,9 +12,9 @@ export default function Footer() {
                             <Image src={`/images/logo.png`} alt="Logo" width={100} height={100}/>
 						</div>
 						<div className="text-sm">
-							<p>123 Main St, City, State</p>
-							<p>(123) 456-7890</p>
-							<p>email@example.com</p>
+							<p>520 Chestnut Ridge Rd spring Valley NY 10977</p>
+							<p>+1(845) 202 2950</p>
+							<p>mates@msbussing.com</p>
 						</div>
 					</div>
 					<div className="flex flex-row gap-14">
