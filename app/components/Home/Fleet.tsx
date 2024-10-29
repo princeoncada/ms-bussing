@@ -20,7 +20,7 @@ export default function Fleet() {
 
 	return (
 		<section className="text-center rounded bg-white pt-12 p-3 pb-6 md:px-10 lg:px-32">
-			<h1 className="font-bold text-3xl mb-8">Our Fleet</h1>
+			{/* <h1 className="font-bold text-3xl mb-8">Our Fleet</h1> */}
 			{pages.map((page, index) => (
 				<div key={page.join("")} className={`${ currentPage === index + 1 ? "grid" : "hidden" } grid-cols-2 grid-rows-1 gap-3 mb-4`}>
 					{page.map((bus) => (

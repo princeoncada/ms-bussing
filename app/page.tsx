@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <Services />
       <Fleet />
-      <Safety />
+      {/* <Safety /> */}
       <Contact />
     </div>
   );
