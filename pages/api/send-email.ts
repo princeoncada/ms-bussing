@@ -50,10 +50,6 @@ export default async function handler(
             message: 'Email sent successfully'
         });
     } catch (error) {
-        console.log(process.env.EMAIL_USER);
-        console.log(process.env.EMAIL_PASS);
-        console.log(process.env.EMAIL_HOST);
-        console.log(process.env.EMAIL_PORT);
         console.error(error);
         return res.status(500).json({
             success: false,
