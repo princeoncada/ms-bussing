@@ -1,5 +1,6 @@
 "use client";
 
+// unresolved imports
 import axios from 'axios';
 import { useState, useEffect } from "react";
 import * as z from "zod";
@@ -23,6 +24,7 @@ export default function Contact() {
     // wth is going on here?
     const { executeRecaptcha } = useGoogleReCaptcha();
 
+    // where is this coming from?
     useEffect(() => {
         const randomFieldName = `field_${Math.random().toString(36).substring(7)}`;
         setHoneypotField(randomFieldName);
@@ -32,6 +34,7 @@ export default function Contact() {
         [honeypotField]: z.string().optional().refine((value) => value === "", { message: "Spam detected!" })
     });
 
+    // somethings wrong with this
     const form = useForm<z.infer<typeof dynamicFormSchema>>({
         resolver: zodResolver(dynamicFormSchema),
         defaultValues: {
