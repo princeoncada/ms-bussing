@@ -64,6 +64,7 @@ export default function Contact() {
             return;
         }
 
+        // try catch and if and else? wth
         // If recaptcha verification is successful, send the email
         const requestObj = {
             to: 'fwend.email.backend@gmail.com',
