@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
 	return (
 		<section className="flex flex-col md:flex-row">

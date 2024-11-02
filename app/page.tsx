@@ -1,9 +1,8 @@
-import Hero from './components/Home/Hero';
-import About from './components/Home/About';
-import Services from './components/Home/Services';
-import Fleet from './components/Home/Fleet';
-import Safety from './components/Home/Safety';
-import Contact from './components/Home/Contact';
+import Hero from '@/components/home-components/Hero';
+import About from '@/components/home-components/About';
+import Services from '@/components/home-components/Services';
+import Fleet from '@/components/home-components/Fleet';
+import Contact from '@/components/home-components/Contact';
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
       <About />
       <Services />
       <Fleet />
-      {/* <Safety /> */}
       <Contact />
     </div>
   );
