@@ -1,7 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import GoogleCaptchaWrapper from "../components/GoogleCaptchaWrapper";
 
 export const metadata = {
   title: "M&S Bussing",
@@ -17,9 +16,7 @@ export default function Layout({ children }: { readonly children: React.ReactNod
       <body className="container mx-auto bg-gray-50">
         <Navbar />
         <main>
-          <GoogleCaptchaWrapper>
           { children }
-          </GoogleCaptchaWrapper>
         </main>
         <Footer />
       </body>
