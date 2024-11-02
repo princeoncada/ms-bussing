@@ -20,6 +20,7 @@ export default function Contact() {
     const [submitMessage, setSubmitMessage] = useState<string | null>(null);
     const [honeypotField, setHoneypotField] = useState<string>("honeypot");
 
+    // wth is going on here?
     const { executeRecaptcha } = useGoogleReCaptcha();
 
     useEffect(() => {
