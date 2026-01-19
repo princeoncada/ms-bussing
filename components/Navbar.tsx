@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Logo from "./Logo"
+import Logo from "./Logo";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -27,6 +28,35 @@ export default function Navbar() {
 					<Link href="/about">About</Link>
 					<Link href="/services">Services</Link>
 					<Link href="/contact">Contact</Link>
+					<div className="relative group">
+						<button
+							type="button"
+							className="inline-flex items-center gap-2"
+						>
+							More
+							<ChevronDown className="h-4 w-4" />
+						</button>
+						<div className="absolute left-0 top-full mt-2 hidden min-w-[180px] rounded-lg border border-gray-100 bg-white p-2 shadow-lg group-hover:block">
+							<Link
+								href="/resources"
+								className="block rounded-md px-3 py-2 text-sm transition-colors hover:bg-gray-100"
+							>
+								Resources
+							</Link>
+							<Link
+								href="/careers"
+								className="block rounded-md px-3 py-2 text-sm transition-colors hover:bg-gray-100"
+							>
+								Careers
+							</Link>
+							<Link
+								href="/blog"
+								className="block rounded-md px-3 py-2 text-sm transition-colors hover:bg-gray-100"
+							>
+								Blog
+							</Link>
+						</div>
+					</div>
 				</div>
 			</nav>
 			<div className={`fixed w-full top-14 bg-gray-100 p-4 flex flex-col gap-3 transition ease-in-out duration-500 ${ isOpen ? "" : "-translate-x-full" } z-10 lg:hidden`}>
