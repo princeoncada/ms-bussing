@@ -13,7 +13,7 @@ export default function Navbar() {
 
 	return (
 		<>
-			<nav className="flex flex-row justify-between bg-white p-4 sticky top-0 w-full z-10 xl:mx-3 xl:w-auto">
+			<nav className="flex flex-row justify-between bg-gray-200 p-4 sticky top-0 w-full z-10 xl:mx-3 xl:w-auto rounded-b-md">
 				<div>
 					<div className="h-[64px]"><Logo></Logo></div>
 				</div>
