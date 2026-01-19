@@ -11,7 +11,7 @@ export default function Home() {
       <About />
       <Services />
       <Fleet />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
